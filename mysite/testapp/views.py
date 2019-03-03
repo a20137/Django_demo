@@ -10,7 +10,6 @@ logger = logging.getLogger(__name__) # __name__ : "testapp.views"
 import json
 
 def fuck(request):
-    logger.info(__name__)
     logger.info(request.GET)
 
     # 下面两行代码也可以改成一行（需要 from django.http import JsonResponse）
